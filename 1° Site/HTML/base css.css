@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: #6bb2CD;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav li{
+    margin-left: 7px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.banner{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('https://i.postimg.cc/XvR5dLMX/fundo-de-imagem.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto .titulo{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    background-color: black;
+    border: 4px solid;
+    border-radius: 40px;
+}
+
+.logo .numero {
+    font-size: 28px;     
+    font-weight: 400;
+    color: #ffffff; 
+    margin-left: 5px; /* Espaçamento entre o texto e o número */
+}
+
+.texto .sub_titulo{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+}
+.texto .botoes{
+    margin-top: 30px;
+}
+.texto .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+/* Sistema de fade-out */
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Estilos de botão e interação */
+.btn {
+    background-color: #6bb2CD;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #6bb2CD;
+}

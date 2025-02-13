@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Base Registro.css">
+    <title>『TechBook°』</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i><a href="base.html">SENAI <span class="numero">93610</span></a></i>
+        </div>
+
+        <ul>
+            <li><a href="base.html"> Inicio </a></li>
+            <li><a href="Vlivros.html"> Ver livros </a></li>
+            <li><a href="MPA.html"> Multa por atraso </a></li>
+            <li><a href="https://maps.app.goo.gl/A6wLGMSQt2A728Fz6"> Localização </a></li>
+            <li><a href="VLE.html"> Ver lista de espera </a></li>
+        </ul>
+    </nav>
+    
+    <section class="banner">
+        <div class="texto">
+            <h1 class="titulo">『TechBook°』<br>☠️ Livraria One Piece</h1>
+        </div>
+
+        <div class="page">
+            <form method="POST" class="formLogin">
+                <h1>Login</h1>
+                <p>Digite os seus dados de acesso no campo abaixo.</p>
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+                <label for="password">Senha</label>
+                <input type="password" placeholder="Digite sua senha" />
+                <a href="#" id="RecuperarSenha">Esqueci minha senha</a>
+                <input type="submit" value="Acessar (Não funciona :D )" class="btn" />
+            </form>
+        </div>
+    </section>
+
+    <script>
+
+        //Sistema de FADEout, o fadeout estar ativo na pagina atual.
+        
+        document.getElementById("RecuperarSenha").addEventListener("click", function(event) {
+            event.preventDefault(); 
+
+        
+            document.body.classList.add("fadeOut");
+
+            
+            setTimeout(function() {
+                window.location.href = "recuperar.html"; //Colocar o HTML da pagina que vai aplicar o fade
+            }, 500); 
+        });
+    </script>
+</body>
+</html>

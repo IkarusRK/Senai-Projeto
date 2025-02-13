@@ -1,0 +1,66 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base MPA.css">
+    <title>『TechBook°』</title>
+</head>
+<body>
+
+    <script>
+        function calcularMulta() {
+    let diasAtraso = document.getElementById("diasAtraso").value;
+    diasAtraso = parseInt(diasAtraso);
+    
+    if (isNaN(diasAtraso) || diasAtraso < 0) {
+        document.getElementById("resultado").innerText = 
+            "Por favor, insira um número válido de dias.";
+        return;
+    }
+    
+    let multa = diasAtraso * 0.70;
+    
+    multa = multa.toFixed(2);
+    
+    document.getElementById("resultado").innerText = 
+        `Você está com ${diasAtraso} dias de atraso. Multa total: R$${multa}`;
+}
+
+    </script>
+    
+    <nav>
+        <div class="logo">
+            <i><a href="base.html">SENAI <span class="numero">93610</span></a></i>
+        </div>
+
+        <ul>
+            <li> <a href="base.html">Inicio</a> </li>
+            <li> <a href="Vlivros.html">Ver livros</a> </li>
+            <li> <a href="https://maps.app.goo.gl/A6wLGMSQt2A728Fz6">Localização</a> </li>
+            <li> <a href="VLE.html">Ver lista de espera</a> </li>
+            <li> <a href="Registro.html">Login</a> </li>
+        </ul>
+    </nav>
+    
+    <section class="banner">
+        <div class="texto">
+            <strong><h1 class="titulo">『TechBook°』</h1></strong>
+            <h1 class="sub_titulo">⚠️Valor da multa 0,70R$ por dia.</h1>
+            <div class="botoes">
+                <input 
+                    type="number" 
+                    id="diasAtraso" 
+                    placeholder="Insira os dias de atraso" 
+                    style="height: 40px; width: 200px; margin-right: 10px; font-size: 16px;"
+                />
+                <button class="overlay" onclick="calcularMulta()">Calcular</button>
+            </div>
+            <div id="resultado" class="resultado"></div>
+        </div>
+    </section>
+        
+    
+</body>
+</html>
